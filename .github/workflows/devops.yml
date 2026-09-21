@@ -47,10 +47,10 @@ jobs:
             npm install
 
             echo "4. Restarting PM2 application..."
-            if pm2 describe Project-1-ITCG > /dev/null 2>&1; then
-              APP_ENV=DEV pm2 restart Project-1-ITCG --update-env
+            if pm2 describe node-cicd-demo > /dev/null 2>&1; then
+              APP_ENV=DEV pm2 restart node-cicd-demo --update-env
             else
-              APP_ENV=DEV pm2 start app.js --name Project-1-ITCG --update-env
+              APP_ENV=DEV pm2 start app.js --name node-cicd-demo --update-env
             fi
             
             pm2 save

@@ -33,7 +33,7 @@ jobs:
 
             echo "Deploying to DEV..."
 
-            cd /home/ec2-user/node-cicd-demo/aws-ec2-cicd
+            cd /home/ec2-user/Project-1-ITCG
 
             git fetch origin dev
             git reset --hard origin/dev
